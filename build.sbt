@@ -1,10 +1,10 @@
 name := "digdag-plugin-glue"
 organization := "supimen.digdag.plugin"
 organizationName := "supimen"
-version := "0.1.1"
-scalaVersion := "2.13.1"
+version := "0.3.0"
+scalaVersion := "2.13.12"
 resolvers ++= Seq(Resolver.bintrayRepo("digdag", "maven"))
-val digdagVersion = "0.9.42"
+val digdagVersion = "0.10.5"
 
 val digdagDependencies = Seq(
   "io.digdag"                       % "digdag-spi"                     % digdagVersion % Provided,
@@ -22,6 +22,6 @@ val digdagDependencies = Seq(
 )
 
 libraryDependencies ++= digdagDependencies ++ Seq(
-  "com.amazonaws"              % "aws-java-sdk"   % "1.11.653",
+  "com.amazonaws"              % "aws-java-sdk"   % "1.12.581",
   "com.typesafe.scala-logging" %% "scala-logging" % "3.9.2"
 )
