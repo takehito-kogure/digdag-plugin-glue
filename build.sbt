@@ -22,6 +22,6 @@ val digdagDependencies = Seq(
 )
 
 libraryDependencies ++= digdagDependencies ++ Seq(
-  "com.amazonaws"              % "aws-java-sdk"   % "1.12.581",
+  "com.amazonaws"              % "aws-java-sdk-glue"   % "1.12.581",
   "com.typesafe.scala-logging" %% "scala-logging" % "3.9.2"
 )
